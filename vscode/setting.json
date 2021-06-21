@@ -1,0 +1,77 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.tabSize": 4
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "all",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  "files.associations": {
+    "*.wxml": "html",
+    "*.wxs": "javascript",
+    "*.wxss": "css",
+    "*rc": "json"
+  },
+  "files.autoSave": "onWindowChange",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.ignoreLimitWarning": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitNotFoundWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.remotes": [
+    {
+      "domain": "http://gitee.com/",
+      "name": "gitee",
+      "type": "Custom",
+      "urls": {
+        "branch": "https://http://gitee.com//${repo}/commits/${branch}",
+        "branches": "https://http://gitee.com//${repo}/branches",
+        "commit": "https://http://gitee.com//${repo}/commit/${id}",
+        "file": "https://http://gitee.com//${repo}?path=${file}${line}",
+        "fileInBranch": "https://http://gitee.com//${repo}/blob/${branch}/${file}${line}",
+        "fileInCommit": "https://http://gitee.com//${repo}/blob/${id}/${file}${line}",
+        "fileLine": "#L${line}",
+        "fileRange": "#L${start}-L${end}",
+        "repository": "https://http://gitee.com//${repo}"
+      }
+    }
+  ],
+  "json.schemas": [
+    {
+      "fileMatch": ["*.swagger.json"],
+      "url": "http://json.schemastore.org/swagger-2.0"
+    }
+  ],
+  "minapp-vscode.prettier": {
+    "parser": "html"
+  },
+  "minapp-vscode.wxmlFormatter": "prettier",
+  "pasteImage.path": "${currentFileDir}/images",
+  "terminal.integrated.fontSize": 16,
+  "typescript.check.npmIsInstalled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.fontSize": 18
+}
