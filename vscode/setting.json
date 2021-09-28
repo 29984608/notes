@@ -3,25 +3,65 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.tabSize": 4
   },
-  "diffEditor.ignoreTrimWhitespace": true,
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.autoIndent": "full",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "editor.formatOnSave": true,
-  "editor.insertSpaces": true,
   "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
-  "editor.wordWrap": "on",
+  "editor.wordWrap": "bounded",
   "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "deepIndent",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.probe": [
+    "javascript",
+    "vue",
+    "vue"
+  ],
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript",
+    "vue",
+    "vue"
+  ],
   "files.associations": {
-    "*.wxml": "html",
-    "*.wxs": "javascript",
     "*.wxss": "css",
     "*rc": "json"
   },
@@ -30,48 +70,66 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.ignoreLimitWarning": true,
   "gitlens.advanced.messages": {
     "suppressCommitNotFoundWarning": true,
     "suppressLineUncommittedWarning": true
   },
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
-  "gitlens.remotes": [
-    {
-      "domain": "http://gitee.com/",
-      "name": "gitee",
-      "type": "Custom",
-      "urls": {
-        "branch": "https://http://gitee.com//${repo}/commits/${branch}",
-        "branches": "https://http://gitee.com//${repo}/branches",
-        "commit": "https://http://gitee.com//${repo}/commit/${id}",
-        "file": "https://http://gitee.com//${repo}?path=${file}${line}",
-        "fileInBranch": "https://http://gitee.com//${repo}/blob/${branch}/${file}${line}",
-        "fileInCommit": "https://http://gitee.com//${repo}/blob/${id}/${file}${line}",
-        "fileLine": "#L${line}",
-        "fileRange": "#L${start}-L${end}",
-        "repository": "https://http://gitee.com//${repo}"
-      }
+  "less.compile": {
+    "outExt": ".wxss"
+  },
+  "markdownlint.config": {
+    "line-length": false,
+    "no-bare-urls": false,
+    "no-duplicate-header": false,
+    "no-emphasis-as-header": false,
+    "no-hard-tabs": false,
+    "no-inline-html": false,
+    "no-trailing-punctuation": false,
+    "ul-indent": {
+      "indent": 4
     }
-  ],
-  "json.schemas": [
-    {
-      "fileMatch": ["*.swagger.json"],
-      "url": "http://json.schemastore.org/swagger-2.0"
-    }
-  ],
+  },
+  "minapp-vscode.disableAutoConfig": true,
   "minapp-vscode.prettier": {
-    "parser": "html"
+    "htmlWhitespaceSensitivity": "ignore",
+    "parser": "html",
+    "printWidth": 120
   },
   "minapp-vscode.wxmlFormatter": "prettier",
+  "npm.packageManager": "yarn",
   "pasteImage.path": "${currentFileDir}/images",
-  "terminal.integrated.fontSize": 16,
-  "typescript.check.npmIsInstalled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+  "stylelint.configOverrides": {
+    "extends": [
+      "stylelint-config-standard"
+    ]
   },
-  "editor.fontSize": 18
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "sass",
+    "scss",
+    "styled-css",
+    "sugarss",
+    "vue",
+    "vue-postcss"
+  ],
+  "vetur.format.enable": true,
+  "vetur.validation.script": true,
+  "vetur.validation.style": true,
+  "vetur.validation.template": true,
+  "yaml.schemas": {
+    "http://json.schemastore.org/swagger-2.0": "*.swagger.yml"
+  },
+  "editor.fontSize": 18,
+  "window.openFoldersInNewWindow": "on",
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "eslint.options": {
+    "baseConfig": {
+      "extends": "standard"
+    }
+  },
 }
