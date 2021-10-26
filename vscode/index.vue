@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/"> Home </router-link> |
+      <router-link to="/about"> About </router-link>
     </div>
-    <router-view/>
+    <router-view />
     <h1>Vuex - Demo</h1>
     <!-- msg: {{ $store.state.status }} <br /> -->
     msg: {{ status }} <br />
@@ -20,25 +20,26 @@
 
     <h2>Module</h2>
     <!-- products: {{ $store.state.products.products }} <br> -->
-    products: {{ products }} <br>
+    products: {{ products }} <br />
     <button @click="setProducts([])">Mutation</button>
   </div>
 </template>
 
 <script>
-import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex';
 
 export default {
   computed: {
     ...mapState(['status']),
-    ...mapGetters(['upperMsg']),...mapState('products', ['products'])
+    ...mapGetters(['upperMsg']),
+    ...mapState('products', ['products']),
   },
   methods: {
     ...mapMutations(['changeStatus']),
     ...mapActions(['update']),
-    ...mapMutations('products', ['setProducts'])
+    ...mapMutations('products', ['setProducts']),
   },
-}
+};
 </script>
 
 <style>
