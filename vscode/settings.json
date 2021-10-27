@@ -1,0 +1,140 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": null,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.tabSize": 4
+  },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.autoIndent": "full",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingIndent": "deepIndent",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.probe": [
+    "javascript",
+    "vue",
+    "vue"
+  ],
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript",
+    "vue",
+    "vue"
+  ],
+  "files.associations": {
+    "*.wxss": "css",
+    "*rc": "json"
+  },
+  "files.autoSave": "onWindowChange",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitNotFoundWarning": true,
+    "suppressLineUncommittedWarning": true
+  },
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "less.compile": {
+    "outExt": ".wxss"
+  },
+  "markdownlint.config": {
+    "line-length": false,
+    "no-bare-urls": false,
+    "no-duplicate-header": false,
+    "no-emphasis-as-header": false,
+    "no-hard-tabs": false,
+    "no-inline-html": false,
+    "no-trailing-punctuation": false,
+    "ul-indent": {
+      "indent": 4
+    }
+  },
+  "minapp-vscode.disableAutoConfig": true,
+  "minapp-vscode.prettier": {
+    "htmlWhitespaceSensitivity": "ignore",
+    "parser": "html",
+    "printWidth": 120
+  },
+  "minapp-vscode.wxmlFormatter": "prettier",
+  "npm.packageManager": "yarn",
+  "npm.registry": "https://registry.npm.taobao.org/",
+  "pasteImage.path": "${currentFileDir}/images",
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 0,
+  "stylelint.validate": [
+    "css",
+    "less",
+    "postcss",
+    "sass",
+    "scss",
+    "styled-css",
+    "sugarss",
+    "vue",
+    "vue-postcss"
+  ],
+  "vetur.format.enable": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "vetur.validation.template": false,
+  "yaml.schemas": {
+    "http://json.schemastore.org/swagger-2.0": "*.swagger.yml"
+  },
+  "editor.fontSize": 18,
+  "window.openFoldersInNewWindow": "on",
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "eslint.options": {
+    "baseConfig": {
+      "extends": "standard"
+    }
+  },
+  "redhat.telemetry.enabled": true,
+  "remote.SSH.remotePlatform": {
+    "192.168.5.113": "linux"
+  }
+}

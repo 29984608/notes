@@ -1,56 +1,61 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
+    browser: true
   },
-  extends: ['standard', 'plugin:vue/recommended', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/recommended', 'standard'],
   parserOptions: {
     ecmaVersion: 2021,
     parser: 'babel-eslint',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: ['vue'],
   globals: {},
   rules: {
-    'prettier/prettier': 'error',
-    'arrow-body-style': 0,
-    'arrow-parens': ['error', 'always'],
-    'comma-dangle': 0,
-    'global-require': 0,
-    'import/extensions': 0,
-    'import/no-extraneous-dependencies': 0,
-    'import/prefer-default-export': 0,
-    'import/no-unresolved': 0,
+    'arrow-body-style': 'off',
+    'arrow-parens': [
+      'error',
+      'always'
+    ],
+    'comma-dangle': 'error',
+    'global-require': 'off',
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-unresolved': 'off',
     indent: 'error',
-    'template-curly-spacing': ['error', 'never'],
-    'no-continue': 0,
+    'template-curly-spacing': [
+      'error',
+      'never'
+    ],
+    'no-continue': 'off',
     'no-debugger': 'warn',
-    'no-loop-func': 0,
-    'no-mixed-operators': 0,
-    'no-plusplus': 0,
-    'no-restricted-syntax': 0,
-    'no-underscore-dangle': 0,
-    'no-shadow': 0,
-    'no-bitwise': 0,
+    'no-loop-func': 'off',
+    'no-mixed-operators': 'off',
+    'no-plusplus': 'off',
+    'no-restricted-syntax': 'off',
+    'no-underscore-dangle': 'off',
+    'no-shadow': 'off',
+    'no-bitwise': 'off',
     'no-unused-expressions': [
       'error',
       {
         allowShortCircuit: true,
-        allowTernary: true,
-      },
+        allowTernary: true
+      }
     ],
     'no-use-before-define': [
       'error',
       {
-        functions: false,
-      },
+        functions: false
+      }
     ],
     'no-restricted-globals': [
       'error',
       {
         name: 'event',
-        message: 'Use local parameter instead.',
-      },
+        message: 'Use local parameter instead.'
+      }
     ],
     'max-len': [
       'error',
@@ -60,64 +65,66 @@ module.exports = {
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
         ignoreUrls: true,
-        ignoreTrailingComments: true,
-      },
+        ignoreTrailingComments: true
+      }
     ],
     'max-lines': [
       'error',
       {
-        max: 800,
-      },
+        max: 800
+      }
     ],
     'no-param-reassign': [
       'error',
       {
-        props: false,
-      },
+        props: false
+      }
     ],
-    'no-template-curly-in-string': 0,
+    'no-template-curly-in-string': 'off',
     'object-curly-newline': [
       'error',
       {
         consistent: true,
-        multiline: true,
-      },
+        multiline: true
+      }
     ],
     'prefer-destructuring': [
       'warn',
       {
         AssignmentExpression: {
           array: false,
-          object: false,
+          object: false
         },
         VariableDeclarator: {
           array: false,
-          object: true,
-        },
-      },
+          object: true
+        }
+      }
     ],
     'quote-props': 'error',
-    semi: 0,
-    'space-before-function-paren': 0,
+    semi: 'error',
+    'space-before-function-paren': 'error',
     'spaced-comment': [
       'error',
       'always',
       {
         block: {
-          exceptions: ['*'],
-        },
-      },
+          exceptions: [
+            '*'
+          ]
+        }
+      }
     ],
     'vue/attributes-order': 'error',
     'vue/html-self-closing': 'error',
     'vue/max-attributes-per-line': [
       'error',
       {
-        singleline: 4,
-      },
+        singleline: 4
+      }
     ],
-    'vue/no-v-html': 0,
-    'vue/singleline-html-element-content-newline': 0,
-    'vue/no-mutating-props': 0,
-  },
-};
+    'vue/no-v-html': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/no-mutating-props': 'off'
+  }
+}

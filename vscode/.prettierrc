@@ -21,15 +21,6 @@
     },
     {
       "files": [
-        "*.scss"
-      ],
-      "options": {
-        "parser": "scss",
-        "singleQuote": true
-      }
-    },
-    {
-      "files": [
         "*.wxml",
         "*.html"
       ],
@@ -38,15 +29,6 @@
         "htmlWhitespaceSensitivity": "css",
         "parser": "html",
         "printWidth": 80
-      }
-    },
-    {
-      "files": [
-        "*.yml",
-        "*.yaml"
-      ],
-      "options": {
-        "singleQuote": true
       }
     },
     {
